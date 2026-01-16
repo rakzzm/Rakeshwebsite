@@ -29,15 +29,11 @@ export default function VideoBot() {
       {isOpen && (
         <div className={styles.chatWindow}>
           <div className={styles.videoHeader}>
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline 
-              className={styles.avatarVideo}
-            >
-              <source src="/AI_Profile.mp4" type="video/mp4" />
-            </video>
+            <img 
+              src="/chatbot-header.png" 
+              alt="AI Assistant Header" 
+              className={styles.headerImage}
+            />
             <div className={styles.videoOverlay}>
               <div className={styles.botInfo}>
                 <span className={styles.botName}>Rakesh's AI Assistant</span>
