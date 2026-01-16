@@ -88,13 +88,15 @@ export default function VideoBot() {
         </div>
       )}
 
-      <button 
-        className={styles.toggleButton} 
-        onClick={() => setIsOpen(!isOpen)}
-        aria-label="Toggle AI Assistant"
-      >
-        <img src="/chatbot-avatar.png" alt="AI Assistant" className={styles.avatarImage} />
-      </button>
+      {!isOpen && (
+        <button 
+          className={styles.toggleButton} 
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle AI Assistant"
+        >
+          <img src="/chatbot-avatar.png" alt="AI Assistant" className={styles.avatarImage} />
+        </button>
+      )}
     </div>
   );
 }
