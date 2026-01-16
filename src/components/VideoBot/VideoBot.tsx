@@ -29,11 +29,7 @@ export default function VideoBot() {
       {isOpen && (
         <div className={styles.chatWindow}>
           <div className={styles.videoHeader}>
-            <img 
-              src="/chatbot-header.png" 
-              alt="AI Assistant Header" 
-              className={styles.headerImage}
-            />
+
             <div className={styles.videoOverlay}>
               <div className={styles.botInfo}>
                 <span className={styles.botName}>Rakesh's AI Assistant</span>
