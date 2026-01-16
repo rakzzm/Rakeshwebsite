@@ -1,0 +1,28 @@
+.typewriterWrapper {
+  display: inline-block;
+}
+
+.typewriterText {
+  font-family: var(--font-display, sans-serif);
+  font-weight: 800;
+  background: linear-gradient(135deg, #ec4899 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  line-height: 1.2;
+}
+
+.cursor {
+  display: inline-block;
+  width: 3px;
+  background-color: #ec4899;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  ai-evangelist-website:
+    build: .
+    container_name: ai-evangelist-website
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    networks:
+      - web
+
+networks:
+  web:
+    driver: bridge

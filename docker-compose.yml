@@ -1,0 +1,17 @@
+services:
+  ai-evangelist-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-evangelist-website
+    ports:
+      - "7007:3000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - web
+
+networks:
+  web:
+    driver: bridge

@@ -1,0 +1,48 @@
+/* [project]/src/components/Footer.module.css [app-client] (css) */
+.Footer-module__S6Hkya__footer {
+  background: var(--color-bg-secondary);
+  padding: var(--space-2xl) 0;
+  border-top: 1px solid #ffffff0d;
+}
+
+.Footer-module__S6Hkya__footerContent {
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.Footer-module__S6Hkya__footerText {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-tertiary);
+}
+
+.Footer-module__S6Hkya__footerLinks {
+  gap: var(--space-xl);
+  display: flex;
+}
+
+.Footer-module__S6Hkya__footerLinks a {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  transition: color var(--transition-base);
+}
+
+.Footer-module__S6Hkya__footerLinks a:hover {
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+  .Footer-module__S6Hkya__footerContent {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .Footer-module__S6Hkya__footerLinks {
+    gap: var(--space-md);
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=src_components_Footer_module_css_bad6b30c._.single.css.map*/

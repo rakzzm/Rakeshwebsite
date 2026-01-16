@@ -1,0 +1,7 @@
+# Docker & Build Files
+.DS_Store
+*.log
+.env
+.vscode/
+.idea/
+node_modules/

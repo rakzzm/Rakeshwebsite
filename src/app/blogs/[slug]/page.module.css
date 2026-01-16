@@ -1,0 +1,145 @@
+.page {
+  min-height: 100vh;
+  padding-top: 100px;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.articleContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem 6rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: #818cf8;
+}
+
+.articleHeader {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.iconWrapper {
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  animation: float 6s ease-in-out infinite;
+}
+
+.iconWrapper svg {
+  width: 80px;
+  height: 80px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font-space-grotesk);
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tag {
+  font-size: 0.85rem;
+  padding: 0.35rem 1rem;
+  border-radius: 100px;
+  background: rgba(99, 102, 241, 0.1);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* Styles for HTML content injected via dangerouslySetInnerHTML */
+.content h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin: 3rem 0 1.5rem;
+  font-family: var(--font-space-grotesk);
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin: 2.5rem 0 1rem;
+  font-family: var(--font-space-grotesk);
+}
+
+.content h4 {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.content p {
+  margin-bottom: 1.5rem;
+}
+
+.content ul {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.content strong {
+  color: var(--text-primary);
+}
+
+.content code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: #e2e8f0;
+}
+
+/* Use Case Box Styling */
+.content :global(.use-case) {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #6366f1;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
