@@ -97,7 +97,7 @@ export default function VideoBot() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle AI Assistant"
       >
-        🤖
+        <img src="/chatbot-avatar.png" alt="AI Assistant" className={styles.avatarImage} />
       </button>
     </div>
   );
